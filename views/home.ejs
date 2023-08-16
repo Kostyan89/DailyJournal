@@ -5,7 +5,10 @@
     <p><%= homeStartingContent %></p>
     <% posts.forEach(post =>{%>
     <h2><%= post.title %></h2>
-    <p><%= post.content %></p>
+    <p>
+      <%= post.content.slice(0, 100) %>
+      <a href="/posts/<%= post.title %>">...Read more</a>
+    </p>
     <%})%>
   </div>
 </body>

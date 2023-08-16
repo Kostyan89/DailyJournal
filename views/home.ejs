@@ -6,8 +6,8 @@
     <% posts.forEach(post =>{%>
     <h2><%= post.title %></h2>
     <p>
-      <%= post.content.slice(0, 100) %>
-      <a href="/posts/<%= post.title %>">...Read more</a>
+      <%= post.content.substring(0, 100) + "..."%>
+      <a href="/posts/<%= post.title %>">Read more</a>
     </p>
     <%})%>
   </div>

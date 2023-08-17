@@ -2,12 +2,12 @@
 <body>
   <div class="container">
     <h1>Home</h1>
-    <p><%= homeStartingContent %></p>
+
     <% posts.forEach(post =>{%>
     <h2><%= post.title %></h2>
     <p>
-      <%= post.content.substring(0, 100) + "..."%>
-      <a href="/posts/<%= post.title %>">Read more</a>
+      <%= post.content.substring(0, 100) + " ..."%>
+      <a href="/posts/<%= post._id %>">Read more</a>
     </p>
     <%})%>
   </div>
